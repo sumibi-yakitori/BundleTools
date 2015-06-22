@@ -14,10 +14,7 @@ namespace SumibiYakitori.PlaTools {
 		} 
 
 		public override void Run() {
-			//EditorUtility.DisplayCustomMenu(
 			SmartExport();
-
-			// EditorUtility.CollectDependenciesした結果をそれぞれGetAssetPathみたいにして、その結果まとめてExport APIにぶっこみゃいいのかな
 		}
 
 		[MenuItem( "TEST/SmartExport", false, 0 )]
@@ -34,16 +31,6 @@ namespace SumibiYakitori.PlaTools {
 				.ToArray();
 			Debug.Log(string.Join("\n", assetPathNames));
 			AssetDatabase.ExportPackage(assetPathNames, target.name + ".unitypackage");
-
-			//AssetDatabase.ExportPackage(
-			//		@"Assets\Resources\Prefabs\StageObjects\Common\TreasureChest\Silver\ChestRotation.cs"
-			//		, @"D:\Test.unitypackage", ExportPackageOptions.Default);
-			//AssetDatabase.ExportPackage(
-			//		@"D:\SVN\Artifacts-new\Development\UnityClient\Assets\Resources\Prefabs\StageObjects\Common\TreasureChest\Silver\ChestRotation.cs"
-			//		, "Test.unitypackage", ExportPackageOptions.Default);
-
-			//AssetDatabase.ExportPackage(new string[] { assetPathNames[0] }, "Test.unitypackage", ExportPackageOptions.Default);
-			//AssetDatabase.ExportPackage(assetPathNames[0], "Test.unitypackage", ExportPackageOptions.Default);
 		}
 	}
 }
