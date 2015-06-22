@@ -17,7 +17,7 @@ namespace SumibiYakitori.PlaTools {
 			SmartExport();
 		}
 
-		[MenuItem( "TEST/SmartExport", false, 0 )]
+		//[MenuItem( "TEST/SmartExport", false, 0 )]
 		public static void SmartExport() {
 			var target = Selection.activeGameObject;
 			var dependObjs = EditorUtility.CollectDependencies(new UnityEngine.Object[] { target });
