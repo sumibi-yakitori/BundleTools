@@ -10,6 +10,7 @@ namespace SumibiYakitori.PlaTools {
 			this.Text = "Reset PRS";
 			this.Size = new Vector2(1, 2);
 			this.Filters.NeedSelection = true;
+			this.Filters.NeedComponentType = typeof(Transform);
 		} 
 
 		public override void Run() {

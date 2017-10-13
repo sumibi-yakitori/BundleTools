@@ -11,6 +11,7 @@ namespace SumibiYakitori.PlaTools {
 		public SmartExportTool() : base() { 
 			this.Text = "SmartExport";
 			this.Filters.NeedSelection = true;
+			this.Filters.NeedType = typeof(GameObject);
 		} 
 
 		public override void Run() {
