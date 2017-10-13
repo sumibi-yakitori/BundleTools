@@ -8,7 +8,7 @@ namespace SumibiYakitori.PlaTools {
 	public class ResetTool : Tool {
 		public ResetTool() : base() {
 			this.Text = "Reset PRS";
-			this.Size = new Vector2(1, 2);
+			this.Size = new Vector2(1, 2); // ボタンのサイズ
 			this.Filters.NeedSelection = true;
 			this.Filters.NeedComponentType = typeof(Transform);
 		} 
