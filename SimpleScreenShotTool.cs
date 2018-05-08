@@ -35,7 +35,7 @@ namespace SumibiYakitori.PlaTools {
 			dest.position = this.sourcePosition;
 			dest.rotation = this.sourceRotation;
 
-			Application.CaptureScreenshot("Capture.png", 4);
+			ScreenCapture.CaptureScreenshot("Capture.png", 4);
 
 			EditorApplication.playmodeStateChanged += this.Dispose;
 			EditorApplication.isPlaying = false;
